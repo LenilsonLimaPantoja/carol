@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .container .h2-1 {
+        position: fixed;
+        left: 150px;
+        top: 150px;
+        z-index: 9999;
+        animation-name: h2-animate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    .container .h2-2 {
+        position: fixed;
+        right: 150px;
+        bottom: 150px;
+        z-index: 9999;
+        animation-name: h2-animate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes h2-animate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .container img {
+        width: 150px;
+        animation-name: img-animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes img-animate {
+        100% {
+            transform: scale(30);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2 class="h2-1">CAROL</h2>
+        <h2 class="h2-2">LIMINHA</h2>
+        <img src="1.png" alt="" srcset="" alt="Imagem de coração">
+    </div>
+</body>
+
+</html>
